@@ -1,0 +1,79 @@
+.buttons-set {
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.buttons {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.radio-button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  border: 0px;
+  border-radius: 4px;
+  padding: 6px 22px;
+  cursor: pointer;
+  color: var(--brand-color-title);
+  background-color: var(--secondary-bg);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+
+.radio-button:hover,
+.radio-button:focus {
+  background-color: var(--brand-color-accent);
+  color: var(--main-white);
+}
+
+.radio-button.current {
+  background-color: var(--brand-color-accent);
+  color: var(--main-white);
+}
+
+.radio-button-web {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  border: 0px;
+  border-radius: 4px;
+  padding: 6px 20px;
+  cursor: pointer;
+  color: var(--brand-color-title);
+  background-color: var(--secondary-bg);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+
+.radio-button-web:hover,
+.radio-button-web:focus {
+  background-color: var(--brand-color-accent);
+  color: var(--main-white);
+}
+
+.current-radio-button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: var(--main-white);
+  background-color: var(--brand-color-accent);
+  border: 0px;
+  border-radius: 4px;
+  padding: 6px 25px;
+  cursor: pointer;
+}
