@@ -36,10 +36,10 @@
   transition-property: border, fill;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
-}
 
-.client-item-link:hover,
-.client-item-link:focus {
-  border: 1px solid var(--brand-color-accent);
-  fill: var(--brand-color-accent);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--brand-color-accent);
+    fill: var(--brand-color-accent);
+  }
 }
