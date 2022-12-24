@@ -1,28 +1,25 @@
 /* Header */
 
 .header-container {
-  display: flex;
-  align-items: center;
+  @extend %flex-align;
   justify-content: space-between;
 }
 
-.header-nav {
-  display: flex;
+.navigation {
   flex-grow: 1;
-  align-items: center;
+  @extend %flex-align;
   gap: 93px;
 }
 
-.page-header {
+.header {
   padding: 24px 0 25px;
   border-bottom: 1px solid #ececec;
 }
 
 /* LOGO */
-.logo-link {
+.logo {
   text-decoration: none;
-  display: flex;
-  align-items: center;
+  @extend %flex-align;
   flex-shrink: 0;
 }
 
@@ -52,7 +49,7 @@
   }
 }
 
-.link {
+.navigation__link {
   color: var(--brand-color-title);
   position: relative;
   padding-bottom: 32px;
@@ -86,7 +83,7 @@
 }
 /* SITE-NAV header */
 
-.site-nav {
+.navigation__list {
   color: var(--brand-color-text);
   list-style-type: none;
   font-family: "roboto";
@@ -97,8 +94,7 @@
   text-decoration: none;
   text-align: center;
   fill: var(--brand-color-text);
-  display: flex;
-  align-items: center;
+  @extend %flex-align;
   justify-content: center;
   gap: 50px;
   transition-property: color, fill;
@@ -111,14 +107,13 @@
   }
 }
 
-.contacts-list {
+.contacts {
   list-style-type: none;
-  display: flex;
+  @extend %flex-align;
   gap: 30px;
-  align-items: baseline;
 }
 
-.contacts-list-item {
+.contacts__item {
   color: var(--brand-color-text);
   list-style-type: none;
   font-family: "roboto";
@@ -129,8 +124,7 @@
   text-decoration: none;
   text-align: center;
   fill: currentColor;
-  display: flex;
-  align-items: center;
+  @extend %flex-align;
   justify-content: center;
   gap: 10px;
   transition-property: color, fill;

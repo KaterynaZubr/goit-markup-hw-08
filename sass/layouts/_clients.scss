@@ -13,8 +13,7 @@
 }
 
 .client-list {
-  display: flex;
-  align-items: center;
+  @extend %flex-align;
   gap: 30px;
 }
 
@@ -23,10 +22,9 @@
   width: calc((100% - 150px) / 6);
 }
 .client-item-link {
-  display: flex;
   width: 100%;
   height: 92px;
-  align-items: center;
+  @extend %flex-align;
   justify-content: center;
   text-decoration: none;
   list-style-type: none;

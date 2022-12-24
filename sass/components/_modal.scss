@@ -33,9 +33,9 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
+  @extend %flex-align;
   justify-content: center;
-  align-items: center;
+
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -144,9 +144,9 @@
 }
 
 .checkbox-label {
-  display: flex;
+  @extend %flex-align;
   justify-content: center;
-  align-items: center;
+
   font-size: 14px;
   line-height: 1.7;
   color: var(--brand-color-text);
@@ -155,8 +155,7 @@
 }
 
 .checkbox-box {
-  display: flex;
-  align-items: center;
+  @extend %flex-align;
   justify-content: center;
   width: 16px;
   height: 15px;

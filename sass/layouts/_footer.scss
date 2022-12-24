@@ -33,8 +33,7 @@
 
 .logo-link-f {
   text-decoration: none;
-  display: flex;
-  align-items: center;
+  @extend %flex-align;
   max-width: 145px;
   margin-bottom: 20px;
 }
@@ -104,9 +103,8 @@
 }
 
 .soc-link-f {
-  display: flex;
   justify-content: center;
-  align-items: center;
+  @extend %flex-align;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -137,8 +135,7 @@
 }
 
 .form-footer {
-  display: flex;
-  align-items: center;
+  @extend %flex-align;
   gap: 12px;
   fill: var(--main-white);
 }
@@ -180,8 +177,7 @@
 }
 
 .form-button-f {
-  display: flex;
-  align-items: center;
+  @extend %flex-align;
   gap: 10px;
   padding: 13px 35px;
   font-weight: 700;

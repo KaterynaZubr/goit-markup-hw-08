@@ -17,19 +17,18 @@
 }
 
 .team {
-  display: flex;
   gap: 30px;
-  align-items: center;
+  @extend %flex-align;
   /* justify-content: space-between; */
 }
 
 .team-memb {
-  display: flex;
+  @extend %flex-align;
   flex-direction: column;
   background-color: var(--main-white);
   max-width: 270px;
   list-style-type: none;
-  align-items: center;
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -67,9 +66,9 @@
 }
 
 .soc-link {
-  display: flex;
+  @extend %flex-align;
   justify-content: center;
-  align-items: center;
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
