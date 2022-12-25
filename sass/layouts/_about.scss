@@ -1,8 +1,8 @@
-.section-about {
+.about {
   padding-bottom: 94px;
 }
 
-.section-title {
+.about__title {
   color: var(--brand-color-title);
   font-weight: 700;
   font-size: 36px;
@@ -12,31 +12,33 @@
   margin-bottom: 50px;
 }
 
-.photo {
+.about__photo {
   width: 100%;
 }
 
-.progects {
+.about__progects {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  &-item {
-    max-width: 370px;
-    position: relative;
-  }
-  &-description {
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    margin-bottom: 0px;
-    padding: 27px 0;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--main-white);
-    background-color: rgba(47, 48, 58, 0.8);
-  }
+}
+
+.about__item {
+  max-width: 370px;
+  position: relative;
+}
+
+.about__description {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 0px;
+  padding: 27px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--main-white);
+  background-color: rgba(47, 48, 58, 0.8);
 }

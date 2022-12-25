@@ -3,17 +3,17 @@
   padding: 94px 0;
 }
 
-.advantages-container {
+.advantages {
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
 
-.advantages-item {
+.advantages__item {
   width: 270px;
 }
 
-.advantages-item-img {
+.advantages__img {
   @extend %flex-align;
   justify-content: center;
   width: 270px;
@@ -23,7 +23,7 @@
   background-color: #f5f4fa;
 }
 
-.section-part {
+.advantages__name {
   color: var(--brand-color-title);
   font-weight: 700;
   font-size: 14px;
@@ -32,7 +32,7 @@
   margin-bottom: 10px;
 }
 
-.section-descript {
+.advantages__descript {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
