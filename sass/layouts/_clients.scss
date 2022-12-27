@@ -1,8 +1,8 @@
-.section-clients {
+.clients {
   padding: 94px 0;
 }
 
-.section-clients-name {
+.clients__name {
   color: var(--brand-color-title);
   font-weight: 700;
   font-size: 36px;
@@ -12,16 +12,16 @@
   margin-bottom: 50px;
 }
 
-.client-list {
+.clients__list {
   @extend %flex-align;
   gap: 30px;
 }
 
-.client-item {
+.clients__item {
   list-style-type: none;
   width: calc((100% - 150px) / 6);
 }
-.client-item-link {
+.clients__link {
   width: 100%;
   height: 92px;
   @extend %flex-align;

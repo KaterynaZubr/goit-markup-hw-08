@@ -3,20 +3,14 @@
   padding: 60px 0;
 }
 
-.footer-box {
-  display: flex;
-  padding: 93px;
-  align-items: baseline;
-}
-
-.footer-info-blocks {
+.footer__block {
   display: flex;
   /* flex-grow: 1; */
   gap: 70px;
   align-items: baseline;
 }
 
-.footer-info-item {
+.footer__item {
   list-style-type: none;
   display: block;
 }
@@ -31,61 +25,28 @@
   margin-bottom: 20px;
 }
 
-.logo-link-f {
-  text-decoration: none;
-  @extend %flex-align;
+.logo--footer {
   max-width: 145px;
   margin-bottom: 20px;
 }
 
-.logo-st-footer {
+.logo__second--footer {
   color: var(--main-white);
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03;
-  text-decoration: none;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-
-  &:hover {
-    color: var(--brand-color-accent);
-  }
 }
 
-.contact-list-f {
+.connections {
   padding: 0;
 }
 
-.site-nav-li {
+.connections__way {
   list-style-type: none;
   margin-bottom: 9px;
-}
-
-.site-nav-li:last-child {
-  margin-bottom: 0;
-}
-
-.geolocation {
-  color: var(--main-white);
-  text-decoration: none;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-
-  &:hover,
-  &:focus {
-    color: var(--brand-color-accent);
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
-.site-nav-f {
+.connections__link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-size: 14px;
@@ -102,25 +63,16 @@
   }
 }
 
-.soc-link-f {
-  justify-content: center;
-  @extend %flex-align;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  fill: var(--main-white);
-  background-color: rgba(255, 255, 255, 0.1);
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  &:hover,
-  &:focus {
-    background-color: var(--brand-color-accent);
-    fill: var(--main-white);
-  }
+.connections__link--geolocation {
+  color: var(--main-white);
 }
 
-.push-next-block {
+.socials__link--footer {
+  fill: var(--main-white);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__item--push {
   flex-grow: 1;
 }
 
