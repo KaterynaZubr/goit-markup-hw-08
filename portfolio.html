@@ -352,7 +352,7 @@
             </address>
           </li>
           <li class="footer__item footer__item--push">
-            <h3 class="footer-social">приєднуйтесь</h3>
+            <h3 class="socials__invitation">приєднуйтесь</h3>
             <ul class="socials">
               <li class="socials__item">
                 <a href="" class="socials__link socials__link--footer">
@@ -385,25 +385,27 @@
             </ul>
           </li>
           <li class="footer__item">
-            <p class="form-title">Підпишіться на розсилку</p>
+            <p class="subscribe-form__title">Підпишіться на розсилку</p>
             <form
-              name="form-footer"
-              class="form-footer"
+              name="subscribe-form"
+              class="subscribe-form"
               autocomplete="on"
               novalidate
             >
-              <div class="form-input-f">
+              <div class="subscribe-form__box">
                 <input
                   type="email"
-                  class="form-footer-input"
+                  class="subscribe-form__input"
                   id="subscribe"
                   name="email"
                   placeholder=" "
                 />
-                <label for="subscribe" class="form-footer-label">E-mail</label>
+                <label for="subscribe" class="subscribe-form__label"
+                  >E-mail</label
+                >
               </div>
 
-              <button type="submit" class="form-button-f">
+              <button type="submit" class="subscribe-form__button">
                 Підписатися
                 <svg width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>

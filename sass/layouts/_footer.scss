@@ -15,7 +15,7 @@
   display: block;
 }
 
-.footer-social {
+.socials__invitation {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
@@ -76,7 +76,7 @@
   flex-grow: 1;
 }
 
-.form-title {
+.subscribe-form__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -86,17 +86,17 @@
   margin-bottom: 20px;
 }
 
-.form-footer {
+.subscribe-form {
   @extend %flex-align;
   gap: 12px;
   fill: var(--main-white);
 }
 
-.form-input-f {
+.subscribe-form__box {
   position: relative;
 }
 
-.form-footer-input {
+.subscribe-form__input {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
@@ -112,7 +112,7 @@
   }
 }
 
-.form-footer-label {
+.subscribe-form__label {
   position: absolute;
   top: 50%;
   left: 16px;
@@ -120,15 +120,15 @@
   transition-property: transform 250ms var(--timing-function);
 }
 
-.form-footer-input:focus + .form-footer-label {
+.subscribe-form__input:focus + .subscribe-form__label {
   transform: translateY(-45px);
 }
 
-.form-footer-input:not(:placeholder-shown) + .form-footer-label {
+.subscribe-form__input:not(:placeholder-shown) + .subscribe-form__label {
   transform: translateY(-45px);
 }
 
-.form-button-f {
+.subscribe-form__button {
   @extend %flex-align;
   gap: 10px;
   padding: 13px 35px;
@@ -142,11 +142,4 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: var(--brand-color-accent);
-}
-
-.form-button-img {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 28px;
 }
