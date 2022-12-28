@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -24,25 +24,29 @@
   </head>
   <body>
     <!-- header -->
-    <header class="page-header">
+    <header class="header">
       <div class="container">
-        <div class="header-container">
-          <nav class="header-nav">
-            <a href="./" class="logo-link">
-              <span class="logo-web">Web</span>
-              <span class="logo-studio">Studio</span>
+        <div class="header__container">
+          <nav class="navigation">
+            <a href="./" class="logo">
+              <span class="logo__first">Web</span>
+              <span class="logo__second">Studio</span>
             </a>
-            <ul class="site-nav">
-              <li><a href="./" class="link">Студія</a></li>
+            <ul class="navigation__list">
               <li>
-                <a href="./portfolio.html" class="link current">Портфоліо</a>
+                <a href="./" class="navigation__link">Студія</a>
               </li>
-              <li><a href="" class="link">Контакти</a></li>
+              <li>
+                <a href="./portfolio.html" class="navigation__link current"
+                  >Портфоліо</a
+                >
+              </li>
+              <li><a href="" class="navigation__link">Контакти</a></li>
             </ul>
           </nav>
-          <ul class="contacts-list">
+          <ul class="contacts">
             <li>
-              <a href="" class="contacts-list-item">
+              <a href="" class="contacts__item">
                 <span>
                   <svg width="16" height="12">
                     <use href="./images/icons.svg#icon-envelope"></use>
@@ -52,7 +56,7 @@
               >
             </li>
             <li>
-              <a href="tel:+380961111111" class="contacts-list-item">
+              <a href="tel:+380961111111" class="contacts__item">
                 <span>
                   <svg width="10" height="16">
                     <use href="./images/icons.svg#icon-smartphone"></use>
@@ -70,41 +74,49 @@
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
 
-          <div class="buttons-set">
-            <ul class="buttons">
+          <div class="buttons">
+            <ul class="buttons__list">
               <li>
-                <button type="button" class="current-radio-button">Усі</button>
+                <button
+                  type="button"
+                  class="buttons__item buttons__item--current"
+                >
+                  Усі
+                </button>
               </li>
               <li>
-                <button type="button" class="radio-button-web">
+                <button
+                  type="button"
+                  class="buttons__item .buttons__item--large"
+                >
                   Веб-сайти
                 </button>
               </li>
               <li>
-                <button type="button" class="radio-button">Додатки</button>
+                <button type="button" class="buttons__item">Додатки</button>
               </li>
               <li>
-                <button type="button" class="radio-button">Дизайн</button>
+                <button type="button" class="buttons__item">Дизайн</button>
               </li>
               <li>
-                <button type="button" class="radio-button">Маркетинг</button>
+                <button type="button" class="buttons__item">Маркетинг</button>
               </li>
             </ul>
           </div>
 
-          <section class="cases-list">
-            <ul class="cases">
-              <li class="cases-item">
-                <a href="" class="card">
-                  <div class="cases-img">
+          <section class="cases">
+            <ul class="cases__list">
+              <li class="cases__item">
+                <a href="" class="cases__card">
+                  <div class="cases__img">
                     <img
                       src="./images/Website.jpg "
                       alt="вебсайт Технокряк"
                       width="370"
                       height="294"
                     />
-                    <div class="card-overlay">
-                      <p class="overlay-text">
+                    <div class="cases__overlay">
+                      <p class="cases__descript">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
                         функціоналу та сервісів. Все це дозволить відвідувачу
                         отримати вичерпні відомості про компанію чи приватну
@@ -112,74 +124,71 @@
                       </p>
                     </div>
                   </div>
-                  <div class="card-footer">
-                    <h3 class="section-part-portf">Технокряк</h3>
-                    <p class="portf-text">Веб-сайт</p>
+                  <div class="cases__footer">
+                    <h3 class="cases__name">Технокряк</h3>
+                    <p class="cases__spec">Веб-сайт</p>
                   </div>
                 </a>
               </li>
-              <li class="cases-item">
-                <a href="" class="card">
-                  <div class="cases-img">
+              <li class="cases__item">
+                <a href="" class="cases__card">
+                  <div class="cases__img">
                     <img
                       src="./images/Poster.jpg"
                       alt="Баскетбольний постер"
                       width="370"
                       height="294"
-                      class="cases-img"
                     />
-                    <div class="card-overlay">
-                      <p class="overlay-text">
+                    <div class="cases__overlay">
+                      <p class="cases__descript">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Incidunt vitae ut eos deleniti fugiat doloremque tempore
                         voluptates impedit facilis ea.
                       </p>
                     </div>
                   </div>
-                  <div class="card-footer">
-                    <h3 class="section-part-portf">
+                  <div class="cases__footer">
+                    <h3 class="cases__name">
                       Постер New Orlean vs Golden Star
                     </h3>
-                    <p class="portf-text">Дизайн</p>
+                    <p class="cases__spec">Дизайн</p>
                   </div>
                 </a>
               </li>
-              <li class="cases-item">
-                <a href="" class="card">
-                  <div class="cases-img">
+              <li class="cases__item">
+                <a href="" class="cases__card">
+                  <div class="cases__img">
                     <img
                       src="./images/fish-resto.jpg"
                       alt="логотип з рибою"
                       width="370"
                       height="294"
-                      class="cases-img"
                     />
-                    <div class="card-overlay">
-                      <p class="overlay-text">
+                    <div class="cases__overlay">
+                      <p class="cases__descript">
                         Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit. Sunt expedita mollitia tempore sed corporis quae
                         aliquam nihil.
                       </p>
                     </div>
                   </div>
-                  <div class="card-footer">
-                    <h3 class="section-part-portf">Ресторан Seafood</h3>
-                    <p class="portf-text">Додаток</p>
+                  <div class="cases__footer">
+                    <h3 class="cases__name">Ресторан Seafood</h3>
+                    <p class="cases__spec">Додаток</p>
                   </div>
                 </a>
               </li>
-              <li class="cases-item">
-                <a href="" class="card">
-                  <div class="cases-img">
+              <li class="cases__item">
+                <a href="" class="cases__card">
+                  <div class="cases__img">
                     <img
                       src="./images/headphones.jpg"
                       alt="чорні навушники"
                       width="370"
                       height="294"
-                      class="cases-img"
                     />
-                    <div class="card-overlay">
-                      <p class="overlay-text">
+                    <div class="cases__overlay">
+                      <p class="cases__descript">
                         Lorem ipsum dolor, sit amet consectetur adipisicing
                         elit. Necessitatibus recusandae maxime autem sequi et
                         quaerat omnis voluptates ipsa, similique tempora quod
@@ -187,128 +196,121 @@
                       </p>
                     </div>
                   </div>
-                  <div class="card-footer">
-                    <h3 class="section-part-portf">Проєкт Prime</h3>
-                    <p class="portf-text">Маркетинг</p>
+                  <div class="cases__footer">
+                    <h3 class="cases__name">Проєкт Prime</h3>
+                    <p class="cases__spec">Маркетинг</p>
                   </div>
                 </a>
               </li>
-              <li class="cases-item">
-                <a href="" class="card">
-                  <div class="cases-img">
+              <li class="cases__item">
+                <a href="" class="cases__card">
+                  <div class="cases__img">
                     <img
                       src="./images/boxes.jpg"
                       alt="коробки"
                       width="370"
                       height="294"
-                      class="cases-img"
                     />
-                    <div class="card-overlay">
-                      <p class="overlay-text">
+                    <div class="cases__overlay">
+                      <p class="cases__descript">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dolores, cupiditate!
                       </p>
                     </div>
                   </div>
-                  <div class="card-footer">
-                    <h3 class="section-part-portf">Проєкт Boxes</h3>
-                    <p class="portf-text">Додаток</p>
+                  <div class="cases__footer">
+                    <h3 class="cases__name">Проєкт Boxes</h3>
+                    <p class="cases__spec">Додаток</p>
                   </div>
                 </a>
               </li>
-              <li class="cases-item">
-                <a href="" class="card">
-                  <div class="cases-img">
+              <li class="cases__item">
+                <a href="" class="cases__card">
+                  <div class="cases__img">
                     <img
                       src="./images/monitor.jpg"
                       alt="монітор з зображенням"
                       width="370"
                       height="294"
-                      class="cases-img"
                     />
-                    <div class="card-overlay">
-                      <p class="overlay-text">
+                    <div class="cases__overlay">
+                      <p class="cases__descript">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Aliquid ipsam eveniet debitis aperiam officiis vero ut
                         sint?
                       </p>
                     </div>
                   </div>
-                  <div class="card-footer">
-                    <h3 class="section-part-portf">
-                      Inspiration has no Borders
-                    </h3>
-                    <p class="portf-text">Веб-сайт</p>
+                  <div class="cases__footer">
+                    <h3 class="cases__name">Inspiration has no Borders</h3>
+                    <p class="cases__spec">Веб-сайт</p>
                   </div>
                 </a>
               </li>
-              <li class="cases-item">
-                <a href="" class="card">
-                  <div class="cases-img">
+              <li class="cases__item">
+                <a href="" class="cases__card">
+                  <div class="cases__img">
                     <img
                       src="./images/book.jpg"
                       alt="журнал з картинками"
                       width="370"
                       height="294"
-                      class="cases-img"
                     />
-                    <div class="card-overlay">
-                      <p class="overlay-text">
+                    <div class="cases__overlay">
+                      <p class="cases__descript">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Velit deserunt mollitia vero.
                       </p>
                     </div>
                   </div>
-                  <div class="card-footer">
-                    <h3 class="section-part-portf">Видання Limited Edition</h3>
-                    <p class="portf-text">Дизайн</p>
+                  <div class="cases__footer">
+                    <h3 class="cases__name">Видання Limited Edition</h3>
+                    <p class="cases__spec">Дизайн</p>
                   </div>
                 </a>
               </li>
-              <li class="cases-item">
-                <a href="" class="card">
-                  <div class="cases-img">
+              <li class="cases__item">
+                <a href="" class="cases__card">
+                  <div class="cases__img">
                     <img
                       src="./images/tag.jpg"
                       alt="бірка з написом"
                       width="370"
                       height="294"
-                      class="cases-img"
                     />
-                    <div class="card-overlay">
-                      <p class="overlay-text">
+                    <div class="cases__overlay">
+                      <p class="cases__descript">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Beatae et accusamus, quidem dolores eveniet sint!
                       </p>
                     </div>
                   </div>
-                  <div class="card-footer">
-                    <h3 class="section-part-portf">Проєкт LAB</h3>
-                    <p class="portf-text">Маркетинг</p>
+                  <div class="cases__footer">
+                    <h3 class="cases__name">Проєкт LAB</h3>
+                    <p class="cases__spec">Маркетинг</p>
                   </div>
                 </a>
               </li>
-              <li class="cases-item">
-                <a href="" class="card">
-                  <div class="cases-img">
+              <li class="cases__item">
+                <a href="" class="cases__card">
+                  <div class="cases__img">
                     <img
                       src="./images/laptop.jpg"
                       alt="руки на ноутбуці"
                       width="370"
                       height="294"
-                      class="cases-img"
                     />
-                    <div class="card-overlay">
-                      <p class="overlay-text">
+                    <div class="cases__overlay">
+                      <p class="cases__descript">
                         Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit. Fugit quisquam deleniti necessitatibus maiores
                         magnam voluptatum natus totam nostrum sequi consequatur.
                       </p>
                     </div>
                   </div>
-                  <div class="card-footer">
-                    <h3 class="section-part-portf">Growing Business</h3>
-                    <p class="portf-text">Додаток</p>
+                  <div class="cases__footer">
+                    <h3 class="cases__name">Growing Business</h3>
+                    <p class="cases__spec">Додаток</p>
                   </div>
                 </a>
               </li>
@@ -319,68 +321,95 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <ul class="footer-info-blocks">
-          <li class="footer-info-item">
-            <a href="./" class="logo-link-f">
-              <span class="logo-web">Web</span>
-              <span class="logo-st-footer">Studio</span></a
+        <ul class="footer__block">
+          <li class="footer__item">
+            <a href="./" class="logo logo--footer">
+              <span class="logo__first">Web</span>
+              <span class="logo__second logo__second--footer">Studio</span></a
             >
             <address>
-              <ul class="contact-list-f">
-                <li class="site-nav-li">
+              <ul class="connections">
+                <li class="connections__way">
                   <a
                     href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
-                    class="geolocation"
+                    class="connections__link connections__link--geolocation"
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li class="site-nav-li">
-                  <a href="mailto:info@devstudio.com" class="site-nav-f"
+                <li class="connections__way">
+                  <a href="mailto:info@devstudio.com" class="connections__link"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li class="site-nav-li">
-                  <a href="tel:+380961111111" class="site-nav-f"
+                <li class="connections__way">
+                  <a href="tel:+380961111111" class="connections__link"
                     >+38 096 111 11 11</a
                   >
                 </li>
               </ul>
             </address>
           </li>
-          <li class="footer-info-item">
+          <li class="footer__item footer__item--push">
             <h3 class="footer-social">приєднуйтесь</h3>
-            <ul class="soc-list">
-              <li class="soc-item">
-                <a href="" class="soc-link-f">
+            <ul class="socials">
+              <li class="socials__item">
+                <a href="" class="socials__link socials__link--footer">
                   <svg width="20px" height="20px">
                     <use href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
               </li>
-              <li class="soc-item">
-                <a href="" class="soc-link-f">
+              <li class="socials__item">
+                <a href="" class="socials__link socials__link--footer">
                   <svg width="20px" height="20px">
                     <use href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
               </li>
-              <li class="soc-item">
-                <a href="" class="soc-link-f">
+              <li class="socials__item">
+                <a href="" class="socials__link socials__link--footer">
                   <svg width="20px" height="20px">
                     <use href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
               </li>
-              <li class="soc-item">
-                <a href="" class="soc-link-f">
+              <li class="socials__item">
+                <a href="" class="socials__link socials__link--footer">
                   <svg width="20px" height="20px">
                     <use href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
               </li>
             </ul>
+          </li>
+          <li class="footer__item">
+            <p class="form-title">Підпишіться на розсилку</p>
+            <form
+              name="form-footer"
+              class="form-footer"
+              autocomplete="on"
+              novalidate
+            >
+              <div class="form-input-f">
+                <input
+                  type="email"
+                  class="form-footer-input"
+                  id="subscribe"
+                  name="email"
+                  placeholder=" "
+                />
+                <label for="subscribe" class="form-footer-label">E-mail</label>
+              </div>
+
+              <button type="submit" class="form-button-f">
+                Підписатися
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
           </li>
         </ul>
       </div>

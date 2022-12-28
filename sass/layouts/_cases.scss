@@ -1,8 +1,4 @@
-.cases-list {
-  text-decoration: none;
-}
-
-.cases {
+.cases__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -10,13 +6,13 @@
   list-style-type: none;
 }
 
-.cases-item {
+.cases__item {
   width: 370px;
   align-items: center;
   &:hover,
   &:focus,
-  &:hover .card-overlay,
-  &:focus .card-overlay {
+  &:hover .cases__overlay,
+  &:focus .cases__overlay {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
     transition-property: box-shadow;
@@ -30,11 +26,11 @@
   /* flex-basis: calc((100% - 2 * 30px) / 3 */
 }
 
-.card {
+.cases__card {
   text-decoration: none;
 }
 
-.cases-img {
+.cases__img {
   display: block;
   position: relative;
   width: 370px;
@@ -42,7 +38,7 @@
   overflow: hidden;
 }
 
-.card-overlay {
+.cases__overlay {
   position: absolute;
   background-color: rgba(33, 150, 243, 0.9);
   width: 100%;
@@ -54,7 +50,7 @@
   transition: transform 250ms var(--timing-function);
 }
 
-.overlay-text {
+.cases__descript {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
@@ -64,13 +60,13 @@
   padding: 63px 24px;
 }
 
-.card-footer {
+.cases__footer {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
 
-.section-part-portf {
+.cases__name {
   color: var(--brand-color-title);
   font-weight: 700;
   font-size: 18px;
@@ -78,7 +74,7 @@
   letter-spacing: 0.06em;
 }
 
-.portf-text {
+.cases__spec {
   color: var(--brand-color-text);
   font-weight: 400;
   font-size: 16px;
