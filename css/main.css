@@ -512,6 +512,11 @@ body {
   margin-bottom: 16px;
 }
 
+.staff--socials {
+  fill: var(--soc-icon);
+  background-color: var(--main-white);
+}
+
 .clients {
   padding: 94px 0;
 }
@@ -746,16 +751,6 @@ body {
   display: block;
 }
 
-.socials__invitation {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1, 14;
-  letter-spacing: 0.03;
-  color: var(--main-white);
-  margin-bottom: 20px;
-}
-
 .logo--footer {
   max-width: 145px;
   margin-bottom: 20px;
@@ -796,7 +791,17 @@ body {
   color: var(--main-white);
 }
 
-.socials__link--footer {
+.socials__invitation {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1, 14;
+  letter-spacing: 0.03;
+  color: var(--main-white);
+  margin-bottom: 20px;
+}
+
+.footer--socials {
   fill: var(--main-white);
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -898,8 +903,6 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--soc-icon);
-  background-color: var(--main-white);
   transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
