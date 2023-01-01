@@ -387,13 +387,9 @@ body {
   list-style-type: none;
 }
 
-.cases__item {
+.cases__card {
   width: 370px;
   align-items: center;
-}
-
-.cases__card {
-  text-decoration: none;
   transition: box-shadow 250ms var(--timing-function);
 }
 .cases__card:hover, .cases__card:focus {
@@ -401,6 +397,10 @@ body {
 }
 .cases__card:hover .cases__overlay, .cases__card:focus .cases__overlay {
   transform: translateY(0);
+}
+
+.cases__link {
+  text-decoration: none;
 }
 
 .cases__overlay {

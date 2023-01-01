@@ -6,24 +6,23 @@
   list-style-type: none;
 }
 
-.cases__item {
+.cases__card {
   width: 370px;
   align-items: center;
-}
-
-.cases__card {
-  text-decoration: none;
   transition: box-shadow 250ms var(--timing-function);
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-
   &:hover .cases__overlay,
   &:focus .cases__overlay {
     transform: translateY(0);
   }
+}
+
+.cases__link {
+  text-decoration: none;
 }
 
 .cases__overlay {
