@@ -56,7 +56,24 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding: 60px 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 60px 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 94px 15px;
+  }
 }
 
 .button {
@@ -139,6 +156,10 @@ body {
 
 .buttons__item--large {
   padding: 6px 20px;
+}
+
+.section {
+  color: var(--brand-color-text);
 }
 
 /* Header */
@@ -294,25 +315,21 @@ body {
   margin: 0 auto 30px auto;
 }
 
-.section {
-  color: var(--brand-color-text);
-  padding: 94px 0;
-}
-
 .advantages {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .advantages__item {
-  width: 270px;
+  width: 100%;
 }
 
 .advantages__img {
   justify-content: center;
-  width: 270px;
-  height: 120px;
+  width: 100%;
+  padding: 25px 0;
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
@@ -325,6 +342,11 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 480px) {
+  .advantages__name {
+    text-align: center;
+  }
 }
 
 .advantages__descript {
@@ -470,21 +492,36 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .staff__list {
   gap: 30px;
+  flex-wrap: wrap;
   /* justify-content: space-between; */
 }
 
 .staff__memb {
   flex-direction: column;
   background-color: var(--main-white);
-  max-width: 270px;
+  width: 100%;
   list-style-type: none;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .staff__memb {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .staff__memb {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+.staff__photo {
+  width: 100%;
 }
 
 .staff__describe {

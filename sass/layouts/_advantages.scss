@@ -1,23 +1,20 @@
-.section {
-  color: var(--brand-color-text);
-  padding: 94px 0;
-}
-
 .advantages {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .advantages__item {
-  width: 270px;
+  width: 100%;
 }
 
 .advantages__img {
   @extend %flex-align;
   justify-content: center;
-  width: 270px;
-  height: 120px;
+  width: 100%;
+  padding: 25px 0;
+
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
@@ -30,6 +27,9 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
 }
 
 .advantages__descript {
