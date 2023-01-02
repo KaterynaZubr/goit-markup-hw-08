@@ -318,12 +318,23 @@ body {
 .advantages {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
   list-style: none;
   flex-wrap: wrap;
 }
 
 .advantages__item {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .advantages__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .advantages__img {
@@ -343,7 +354,7 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .advantages__name {
     text-align: center;
   }
@@ -358,6 +369,21 @@ body {
 
 .about {
   padding-bottom: 94px;
+}
+@media screen and (max-width: 1200px) {
+  .about {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+    margin: -1px;
+  }
 }
 
 .about__title {
@@ -405,24 +431,23 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  text-decoration: none;
   list-style-type: none;
 }
 
 .cases__card {
   width: 370px;
   align-items: center;
-  transition: box-shadow 250ms var(--timing-function);
-}
-.cases__card:hover, .cases__card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.cases__card:hover .cases__overlay, .cases__card:focus .cases__overlay {
-  transform: translateY(0);
 }
 
 .cases__link {
   text-decoration: none;
+  transition: box-shadow 250ms var(--timing-function);
+}
+.cases__link:hover, .cases__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.cases__link:hover .cases__overlay, .cases__link:focus .cases__overlay {
+  transform: translateY(0);
 }
 
 .cases__overlay {
@@ -551,7 +576,7 @@ body {
 }
 
 .clients {
-  padding: 94px 0;
+  padding: 0;
 }
 
 .clients__name {
@@ -565,12 +590,14 @@ body {
 }
 
 .clients__list {
+  flex-wrap: wrap;
   gap: 30px;
+  width: 100%;
 }
 
 .clients__item {
   list-style-type: none;
-  width: calc((100% - 150px) / 6);
+  width: calc((100% - 30px) / 2);
 }
 
 .clients__link {
