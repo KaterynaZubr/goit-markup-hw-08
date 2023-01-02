@@ -5,19 +5,24 @@
 
 .footer__block {
   display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
   /* flex-grow: 1; */
-  gap: 70px;
-  align-items: baseline;
+  // gap: 70px;
+  // align-items: baseline;
 }
 
 .footer__item {
   list-style-type: none;
   display: block;
+  margin: 0 auto;
 }
 
 .logo--footer {
   max-width: 145px;
   margin-bottom: 20px;
+  margin: 0 auto;
 }
 
 .logo__second--footer {
@@ -31,6 +36,7 @@
 .connections__way {
   list-style-type: none;
   margin-bottom: 9px;
+  text-align: center;
   &:last-child {
     margin-bottom: 0;
   }
@@ -64,10 +70,9 @@
   line-height: 1, 14;
   letter-spacing: 0.03;
   color: var(--main-white);
+  text-align: center;
   margin-bottom: 20px;
 }
-
-
 
 .footer--socials {
   fill: var(--main-white);
@@ -84,12 +89,15 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--main-white);
   margin-bottom: 20px;
 }
 
 .subscribe-form {
   @extend %flex-align;
+  align-items: center;
+  flex-direction: column;
   gap: 12px;
   fill: var(--main-white);
 }
