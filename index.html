@@ -25,7 +25,7 @@
 
   <body>
     <!-- header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <div class="header__container">
           <nav class="navigation">
@@ -33,7 +33,7 @@
               <span class="logo__first">Web</span>
               <span class="logo__second">Studio</span>
             </a>
-            <ul class="navigation__list">
+            <!-- <ul class="navigation__list">
               <li>
                 <a href="./" class="navigation__link current">Студія</a>
               </li>
@@ -43,9 +43,9 @@
                 >
               </li>
               <li><a href="" class="navigation__link">Контакти</a></li>
-            </ul>
+            </ul> -->
           </nav>
-          <ul class="contacts">
+          <!-- <ul class="contacts">
             <li>
               <a href="" class="contacts__item">
                 <span>
@@ -66,10 +66,30 @@
                 <span>+38 096 111 11 11</span></a
               >
             </li>
-          </ul>
+          </ul> -->
+
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
         </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <section class="hero">
@@ -137,7 +157,7 @@
       </section>
       <!-- section about our work -->
       <section class="section">
-        <div class="about">
+        <div class="container about">
           <h2 class="about__title">Чим ми займаємося</h2>
           <ul class="about__progects">
             <li class="about__item">
@@ -685,6 +705,55 @@
       </div>
     </div> -->
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-mob-menu-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__wrap">
+        <ul class="mobile-menu">
+          <li>
+            <a href="" class="navigation__link navigation--mobile">Студія</a>
+          </li>
+          <li>
+            <a href="" class="navigation__link navigation--mobile">Портфоліо</a>
+          </li>
+          <li>
+            <a href="" class="navigation__link navigation--mobile">Контакти</a>
+          </li>
+        </ul>
+        <ul class="contacts__mobile">
+          <li>
+            <a href="tel:+380961111111" class="mobile-menu__tel"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="mobile-menu__mail">
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <ul class="mobile-menu__socials">
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Instagram</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Twitter</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">Facebook</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link">LinkedIn</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
     <script
       defer
@@ -692,6 +761,6 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
