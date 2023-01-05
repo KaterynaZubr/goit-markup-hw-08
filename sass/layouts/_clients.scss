@@ -1,5 +1,11 @@
 .clients {
-  padding: 0;
+  max-width: 100%;
+  align-items: center;
+  padding: 60px 15px;
+
+  @include desktop {
+    padding: 94px 15px;
+  }
 }
 
 .clients__name {

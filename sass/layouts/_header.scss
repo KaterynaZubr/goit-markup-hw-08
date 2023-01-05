@@ -12,8 +12,14 @@
 }
 
 .header {
-  padding: 24px 0 25px;
+  padding: 16px 15px;
   border-bottom: 1px solid #ececec;
+  @include tablet {
+    padding: 21px 15px;
+  }
+  @include desktop {
+    padding: 24px 15px 25px;
+  }
 }
 
 /* LOGO */
@@ -72,10 +78,7 @@
     color: var(--brand-color-accent);
     fill: currentColor;
   }
-}
-
-@media screen and (max-width: 767px){
-  .navigation__list {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -117,11 +120,7 @@
   list-style-type: none;
   @extend %flex-align;
   gap: 30px;
-  // display: none;
-}
-
-@media screen and (max-width: 767px) {
-  .contacts {
+  @include tel {
     display: none;
   }
 }
@@ -193,12 +192,12 @@
   &:focus {
     fill: var(--brand-color-accent);
   }
-  // @include tablet {
-  //   display: none;
-  // }
-  // @include desktop {
-  //   display: none;
-  // }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
 }
 
 .mobile-menu__wrap {

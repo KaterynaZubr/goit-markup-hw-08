@@ -2,19 +2,4 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-
-  @media screen and (min-width: 480px) {
-    width: 480px; //450+15+15
-    padding: 60px 15px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px; //738+15+15
-    padding: 60px 15px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px; //1170+15+15
-    padding: 94px 15px;
-  }
 }

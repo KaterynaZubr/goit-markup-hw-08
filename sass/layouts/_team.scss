@@ -4,7 +4,13 @@
 
 .staff__container {
   display: block;
-  padding: 0 15px;
+  max-width: 100%;
+  align-items: center;
+  padding: 60px 15px;
+
+  @include desktop {
+    padding: 94px 15px;
+  }
 }
 
 .staff__team {
