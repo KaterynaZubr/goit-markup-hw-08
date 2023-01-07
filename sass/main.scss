@@ -3,6 +3,7 @@
 @import "./base/hidden";
 @import "./utils/variables";
 @import "./utils/mixin";
+@import "./utils/placeholders";
 @import "./components/container";
 @import "./components/btn";
 @import "./components/btnprimary";
@@ -17,5 +18,5 @@
 @import "./layouts/clients";
 @import "./components/modal";
 @import "./layouts/footer";
-@import "./utils/placeholders";
+
 @import "./components/social-link";

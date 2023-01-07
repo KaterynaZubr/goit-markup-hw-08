@@ -22,14 +22,13 @@
 
 .modal {
   padding: 40px;
-  @include tablet {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 450px;
-    height: 609px;
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 609px;
+
   @include desktop {
     position: absolute;
     top: 50%;
@@ -98,9 +97,15 @@
 }
 
 .contact-form__input {
-  width: 448px;
+  width: 100%;
   height: 40px;
   padding: 11px 12px 11px 42px;
+
+  @include desktop {
+    width: 448px;
+    height: 40px;
+    padding: 11px 12px 11px 42px;
+  }
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -155,9 +160,13 @@
 .checkbox__label {
   @extend %flex-align;
   justify-content: center;
+  font-size: 12px;
 
-  font-size: 14px;
+  @include desktop {
+    font-size: 14px;
+  }
   line-height: 1.7;
+  gap: 10px;
   color: var(--brand-color-text);
   /* gap: 10px; */
   /* margin-top: 20px; */

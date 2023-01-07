@@ -4,6 +4,10 @@
   align-items: center;
   padding: 60px 15px;
 
+  @include tablet {
+    max-width: 768px;
+  }
+
   @include desktop {
     max-width: 1200px;
     padding: 94px 15px;
@@ -12,6 +16,7 @@
 
 .advantages {
   display: flex;
+
   justify-content: space-between;
   gap: 30px;
   list-style: none;

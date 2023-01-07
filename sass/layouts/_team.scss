@@ -1,5 +1,6 @@
 .staff {
   background-color: #f5f4fa;
+  margin: 0 auto;
 }
 
 .staff__container {
@@ -9,9 +10,13 @@
   align-items: center;
   padding: 60px 15px;
   margin: 0 auto;
-
+  @include tablet {
+    padding: 94px 15px;
+    max-width: 738px;
+  }
   @include desktop {
     padding: 94px 15px;
+    max-width: 1170px;
   }
 }
 

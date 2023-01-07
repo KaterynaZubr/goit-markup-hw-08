@@ -3,6 +3,12 @@
   width: 100%;
   background-color: var(--brand-color-bg);
   padding: 60px 15px;
+  margin: 0 auto;
+
+  @include desktop {
+    padding: 94px 15px;
+    max-width: 1170px;
+  }
 }
 
 .footer__block {

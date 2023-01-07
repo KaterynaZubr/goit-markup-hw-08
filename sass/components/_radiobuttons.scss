@@ -1,13 +1,27 @@
 .buttons {
   align-items: center;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  margin: 60px;
 }
 
 .buttons__list {
   list-style-type: none;
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  max-width: 326px;
+  @extend %flex-align;
+  justify-content: flex-start;
   gap: 8px;
+  flex-wrap: wrap;
+  @include tablet {
+    max-width: 580px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  @include desktop {
+    max-width: 580px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
 .buttons__item {
