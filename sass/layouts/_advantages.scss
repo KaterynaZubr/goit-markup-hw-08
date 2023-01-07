@@ -1,9 +1,11 @@
 .advantages--content {
-  max-width: 100%;
+  width: 100%;
+
   align-items: center;
   padding: 60px 15px;
 
   @include desktop {
+    max-width: 1200px;
     padding: 94px 15px;
   }
 }

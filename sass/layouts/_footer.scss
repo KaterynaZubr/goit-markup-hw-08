@@ -1,4 +1,5 @@
 .footer {
+  display: block;
   width: 100%;
   background-color: var(--brand-color-bg);
   padding: 60px 15px;
@@ -15,6 +16,7 @@
     align-items: baseline;
   }
   @include desktop {
+    max-width: 1200px;
     flex-wrap: nowrap;
     gap: 70px;
     align-items: baseline;
@@ -122,7 +124,6 @@
   gap: 12px;
   fill: var(--main-white);
   @include tablet {
-    
   }
   @include desktop {
     flex-wrap: nowrap;

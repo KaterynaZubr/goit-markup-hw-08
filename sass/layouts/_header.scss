@@ -73,13 +73,14 @@
   transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   &:hover,
   &:focus {
     color: var(--brand-color-accent);
     fill: currentColor;
-  }
-  @media screen and (max-width: 767px) {
-    display: none;
   }
 }
 
